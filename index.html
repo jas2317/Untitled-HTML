@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jomolhari:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="desktop1-container">
+        <div class="desktop1-desktop1">
+          <div class="desktop1-frame2">
+            <img
+              alt="Rectangle141411"
+              src="public/external/rectangle141411-16nm-300h.png"
+              class="desktop1-rectangle14"
+            />
+            <img
+              alt="Rectangle151411"
+              src="public/external/rectangle151411-yh4x-300h.png"
+              class="desktop1-rectangle151"
+            />
+            <img
+              alt="Rectangle161411"
+              src="public/external/rectangle161411-v7lu-300h.png"
+              class="desktop1-rectangle16"
+            />
+            <img
+              alt="Rectangle171411"
+              src="public/external/rectangle171411-30nmn-300h.png"
+              class="desktop1-rectangle17"
+            />
+            <img
+              alt="Rectangle181411"
+              src="public/external/rectangle181411-apt-200h.png"
+              class="desktop1-rectangle18"
+            />
+            <img
+              alt="Rectangle131413"
+              src="public/external/rectangle131413-fvg-200h.png"
+              class="desktop1-rectangle13"
+            />
+            <img
+              alt="image81377"
+              src="public/external/image81377-f1kr-200h.png"
+              class="desktop1-image8"
+            />
+            <span class="desktop1-text10">FAQs</span>
+            <span class="desktop1-text11">Have Questions?</span>
+            <span class="desktop1-text12">
+              We’re committed to making your experience as smooth and
+              straightforward as possible.
+            </span>
+            <span class="desktop1-text13">What areas do you cover?</span>
+            <span class="desktop1-text14">do i need to provide supplies?</span>
+            <span class="desktop1-text15">Are your products safe?</span>
+            <span class="desktop1-text16">Are your products safe?</span>
+            <span class="desktop1-text17">How do i make payment?</span>
+            <span class="desktop1-text18">
+              We proudly offer janitorial cleaning services in Surrey and all
+              surrounding areas. Whether you're in the heart of the city or
+              nearby communities, we are ready to meet your cleaning needs with
+              reliable and professional service.
+            </span>
+            <span class="desktop1-text19">
+              No, you don’t need to provide anything! We come fully equipped
+              with all the necessary supplies and equipment to ensure a thorough
+              and professional cleaning.
+            </span>
+            <span class="desktop1-text20">
+              Yes! We use high-quality, eco-friendly, and non-toxic cleaning
+              products that are safe for people, pets, and the environment while
+              still being highly effective at keeping your space clean and
+              sanitized.
+            </span>
+            <span class="desktop1-text21">
+              Yes! We use high-quality, eco-friendly, and non-toxic cleaning
+              products that are safe for people, pets, and the environment while
+              still being highly effective at keeping your space clean and
+              sanitized.
+            </span>
+            <span class="desktop1-text22">
+              you can pay us through e-transfer and we take almost all the
+              payment options
+            </span>
+            <img
+              alt="Rectangle151411"
+              src="public/external/rectangle151411-zh7s-200h.png"
+              class="desktop1-rectangle152"
+            />
+            <span class="desktop1-text23">can i schedule the services?</span>
+            <span class="desktop1-text24">
+              absolutely! you can do that while requesting for a quote.
+            </span>
+          </div>
+          <img
+            alt="Rectangle56113"
+            src="public/external/rectangle56113-amse-200h.png"
+            class="desktop1-rectangle5"
+          />
+          <img
+            alt="Rectangle76435"
+            src="public/external/rectangle76435-b0f6-200h.png"
+            class="desktop1-rectangle7"
+          />
+          <img
+            alt="Rectangle43628"
+            src="public/external/rectangle43628-zpul-200h.png"
+            class="desktop1-rectangle4"
+          />
+          <img
+            alt="Rectangle66414"
+            src="public/external/rectangle66414-a806-200h.png"
+            class="desktop1-rectangle6"
+          />
+          <div class="desktop1-frame1">
+            <span class="desktop1-text25">home</span>
+            <span class="desktop1-text26">contact</span>
+            <span class="desktop1-text27">about</span>
+            <img
+              alt="gill113641"
+              src="public/external/gill113641-6n9p-200h.png"
+              class="desktop1-gill111"
+            />
+          </div>
+          <img
+            alt="image1126"
+            src="public/external/image1126-h6z9-1400w.png"
+            class="desktop1-image1"
+          />
+          <img
+            alt="Rectangle11258"
+            src="public/external/rectangle11258-0y5a-500h.png"
+            class="desktop1-rectangle1"
+          />
+          <span class="desktop1-text28">
+            <span class="desktop1-text29">EXPERT</span>
+            <br />
+            <span>Cleaning</span>
+          </span>
+          <span class="desktop1-text32">go to cleaners</span>
+          <img
+            alt="image21262"
+            src="public/external/image21262-fikr-200w.png"
+            class="desktop1-image2"
+          />
+          <span class="desktop1-text33">
+            <span>Creating cleaner, healthier spaces so you can focus on</span>
+            <br />
+            <span>what matters most and relax on the weekends.</span>
+          </span>
+          <span class="desktop1-text37">
+            <span class="desktop1-text38">home</span>
+            <span class="desktop1-text39"></span>
+            <span>refresh.</span>
+          </span>
+          <span class="desktop1-text41">explore</span>
+          <span class="desktop1-text42">explore</span>
+          <img
+            alt="image43624"
+            src="public/external/image43624-t58t-200h.png"
+            class="desktop1-image4"
+          />
+          <span class="desktop1-text43">most used</span>
+          <span class="desktop1-text44">in demand</span>
+          <img
+            alt="image56110"
+            src="public/external/image56110-poua-200h.png"
+            class="desktop1-image5"
+          />
+          <img
+            alt="Vector36433"
+            src="public/external/vector36433-fjyb.svg"
+            class="desktop1-vector3"
+          />
+          <img
+            alt="Checkcircle8377"
+            src="public/external/checkcircle8377-hpja.svg"
+            class="desktop1-checkcircle1"
+          />
+          <img
+            alt="Checkcircle8633"
+            src="public/external/checkcircle8633-6z.svg"
+            class="desktop1-checkcircle2"
+          />
+          <img
+            alt="Checkcircle8690"
+            src="public/external/checkcircle8690-7il.svg"
+            class="desktop1-checkcircle3"
+          />
+          <span class="desktop1-text45">1.2k</span>
+          <span class="desktop1-text46">99%</span>
+          <span class="desktop1-text47">800</span>
+          <span class="desktop1-text48">customers</span>
+          <span class="desktop1-text49">returning</span>
+          <span class="desktop1-text50">satisfaction</span>
+          <img
+            alt="quickresponsewebiconfast600nw20067547791812"
+            src="public/external/quickresponsewebiconfast600nw20067547791812-gyso-600h.png"
+            class="desktop1-quickresponsewebiconfast600nw20067547791"
+          />
+          <img
+            alt="imagesremovebgpreview18110"
+            src="public/external/imagesremovebgpreview18110-zibl-200h.png"
+            class="desktop1-imagesremovebgpreview1"
+          />
+          <span class="desktop1-text51">efficient</span>
+          <span class="desktop1-text52">
+            <span>professional cleaning</span>
+            <br />
+            <span>for every occasion</span>
+          </span>
+          <span class="desktop1-text56">
+            <span>
+              whether you’re maintaining a pristine workspace, or simply
+            </span>
+            <br />
+            <span>
+              keeping your home in top shape, our services are designed
+            </span>
+            <br />
+            <span>to meet all your needs.</span>
+          </span>
+          <span class="desktop1-text62">regular cleaning</span>
+          <span class="desktop1-text63">deep cleaning</span>
+          <span class="desktop1-text64">move in-out cleaning</span>
+          <span class="desktop1-text65">
+            For regular maintenance, our services are tailored to keep your
+            living spaces immaculate
+          </span>
+          <span class="desktop1-text66">
+            <span>
+              Our deep cleaning service goes beyond regular cleaning by removing
+            </span>
+            <br />
+            <span>
+              built-up dirt,eliminating germs, and sanitizing every corner,
+            </span>
+            <br />
+            <span>leaving your space spotless and refreshed!</span>
+          </span>
+          <span class="desktop1-text72">
+            <span>helping you transition smoothly into a new space or</span>
+            <br />
+            <span>leave a lasting impression on your old one.</span>
+          </span>
+          <img
+            alt="cleaningglovesspraywipe1895"
+            src="public/external/cleaningglovesspraywipe1895-fc2-800h.png"
+            class="desktop1-cleaningglovesspraywipe1"
+          />
+          <span class="desktop1-text76">
+            <span class="desktop1-text77">office</span>
+            <span>cleaners</span>
+          </span>
+          <span class="desktop1-text79">
+            <span>The cleaning team that cares — Experts in creating</span>
+            <br />
+            <span>pristine homes and productive workspaces.</span>
+          </span>
+          <span class="desktop1-text83">
+            <span>Experience the ultimate expert cleaning -Creating</span>
+            <br />
+            <span>spaces where comfort and productivity thrive.</span>
+          </span>
+          <img
+            alt="barcart11108"
+            src="public/external/barcart11108-b4x8-500w.png"
+            class="desktop1-barcart1"
+          />
+          <img
+            alt="Rectangle81279"
+            src="public/external/rectangle81279-552-400w.png"
+            class="desktop1-rectangle8"
+          />
+          <img
+            alt="Rectangle91279"
+            src="public/external/rectangle91279-haxa-400w.png"
+            class="desktop1-rectangle9"
+          />
+          <img
+            alt="Rectangle101279"
+            src="public/external/rectangle101279-zp8-400w.png"
+            class="desktop1-rectangle10"
+          />
+          <img
+            alt="image5769"
+            src="public/external/image5769-pzil-200w.png"
+            class="desktop1-image"
+          />
+          <span class="desktop1-text87">
+            “Clean Office, Happy Team! We’ve received nothing but compliments
+            from both staff and clients on how clean and organized our office.
+            It’s made such a difference in our workplace morale.”
+          </span>
+          <img
+            alt="Rectangle111281"
+            src="public/external/rectangle111281-pqrw-200h.png"
+            class="desktop1-rectangle11"
+          />
+          <img
+            alt="Rectangle121282"
+            src="public/external/rectangle121282-sy3w-200h.png"
+            class="desktop1-rectangle12"
+          />
+          <span class="desktop1-text88">john doe</span>
+          <span class="desktop1-text89">jane peterson</span>
+          <span class="desktop1-text90">john doe</span>
+          <img
+            alt="image61281"
+            src="public/external/image61281-0hrn-200w.png"
+            class="desktop1-image6"
+          />
+          <span class="desktop1-text91">
+            “Stress-Free and Sparkling Clean! I have never been more impressed
+            with a cleaning service! It feels amazing to come home to a clean
+            house without having to worry about it!”
+          </span>
+          <span class="desktop1-text92">
+            “Professional and Detailed! Our office has never looked better! The
+            cleaners are punctual, and their attention to high-traffic areas is
+            exactly what we needed. Great value and service!”
+          </span>
+          <span class="desktop1-text93">Innovate Group</span>
+          <span class="desktop1-text94">Tech Global Co.</span>
+          <span class="desktop1-text95">home owner</span>
+          <img
+            alt="image71283"
+            src="public/external/image71283-aqozh-200w.png"
+            class="desktop1-image7"
+          />
+          <img
+            alt="Rectangle191411"
+            src="public/external/rectangle191411-9lpp-1500w.png"
+            class="desktop1-rectangle19"
+          />
+          <img
+            alt="IMAGE62f8f9fe3280f285537b2606cleaning11412"
+            src="public/external/image62f8f9fe3280f285537b2606cleaning11412-39i-600h.png"
+            class="desktop1image62f8f9fe3280f285537b2606cleaning1"
+          />
+          <span class="desktop1-text96">Request a Free Quote</span>
+          <span class="desktop1-text97">
+            Find out how affordable clean can be — Request your free quote
+            today!
+          </span>
+          <div class="desktop1-form-contact">
+            <div class="desktop1-input-field">
+              <span class="desktop1-text98 BodyBase">Email</span>
+              <input type="text" placeholder="email" class="desktop1-input" />
+            </div>
+            <div class="desktop1-textarea-field">
+              <span class="desktop1-text99 BodyBase">Message</span>
+              <div class="desktop1-textarea">
+                <span class="desktop1-text100 BodyBase">message</span>
+                <img
+                  alt="DragI141"
+                  src="public/external/dragi141-2hkl.svg"
+                  class="desktop1-drag"
+                />
+              </div>
+            </div>
+            <button class="desktop1-button-group"></button>
+            <button class="desktop1-button">
+              <span class="desktop1-text101 SingleLineBodyBase">Submit</span>
+            </button>
+          </div>
+          <img
+            alt="Line11507"
+            src="public/external/line11507-u97r.svg"
+            class="desktop1-line1"
+          />
+          <span class="desktop1-text102">
+            © 2024 Cleaners. All Rights Reserved.
+          </span>
+          <img
+            alt="gill111507"
+            src="public/external/gill111507-xkx-200h.png"
+            class="desktop1-gill112"
+          />
+          <img
+            alt="astylishhomeofficewithapastelgreenaccentwalladoubl1519"
+            src="public/external/astylishhomeofficewithapastelgreenaccentwalladoubl1519-igu-600h.png"
+            class="desktop1-astylishhomeofficewithapastelgreenaccentwalladoubl"
+          />
+          <span class="desktop1-text103">236-632-1526</span>
+          <span class="desktop1-text104">phone number</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
